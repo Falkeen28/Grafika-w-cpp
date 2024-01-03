@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>698</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Ekran" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>900</width>
+      <height>600</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="czysc">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>60</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>czyść</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wyjdz">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>20</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>exit</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="suwaczek">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>110</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zmiana">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>140</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>obraz1/obraz2</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1038</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Ekran</class>
+   <extends>QWidget</extends>
+   <header location="global">ekran.h</header>
+   <container>1</container>
+   <slots>
+    <signal>setCurrentAlpha(int)</signal>
+    <slot>alphaSliderChange(int)</slot>
+    <slot>warstwaButton()</slot>
+    <slot>alphaSliderChange()</slot>
+    <slot>setAlpha(int)</slot>
+    <slot>blendMode()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
